@@ -1,12 +1,12 @@
 # **LLM-Based QA for JMP WASH Dataset (Bangla-English Support)**
 
-##**Overview**
+## **Overview**
 
 This project demonstrates the use of a Large Language Model (LLM) to support Water, Sanitation, and Hygiene (WASH)-related tasks under the WHO/UNICEF JMP framework.
 
 The main feature is a Question Answering (QA) system that allows users to ask structured health and sanitation questions in both Bangla and English. The system uses a Retrieval-Augmented Generation (RAG) pipeline with multilingual embeddings for effective bilingual support.
 
-###**Features**
+### **Features**
 
 ✅ Dual-language (Bangla & English) support for queries.
 
@@ -21,7 +21,7 @@ The main feature is a Question Answering (QA) system that allows users to ask st
 ✅ Lightweight, interpretable, and fast architecture.
 
 
-###**System Architecture**
+### **System Architecture**
 
 The system uses RAG with the following components:
 
@@ -45,7 +45,7 @@ LLM generates final answer.
 
 If Bangla → Answer translated back to Bangla.
 
-###**Data Preparation**
+### **Data Preparation**
 
 Collected multiple JMP WASH Excel files.
 
@@ -55,7 +55,7 @@ Converted each row into a QA-style natural language prompt.
 
 Maintained dataset in English only → added translation layer at runtime.
 
-###**Preprocessing & Embeddings**
+### **Preprocessing & Embeddings**
 
 Tokenization & Embedding with distiluse-base-multilingual-cased-v1.
 
@@ -63,7 +63,7 @@ Designed for low-resource languages → effective for Bangla-English tasks.
 
 Embeddings stored and indexed with FAISS for retrieval.
 
-###**Evaluation**
+### **Evaluation**
 
 Evaluation conducted via manual scoring (1–5 scale) on:
 
@@ -76,7 +76,7 @@ Accuracy (factual correctness).
 This provided direct insight into system performance in both Bangla and English.
 
 
-###**Future Improvements**
+### **Future Improvements**
 
 Incorporate summarization features.
 
